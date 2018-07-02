@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cancer Detection</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body
+    {
+      background-color: #123456;
+   color:white;
+   
+    }
+    input
+    {
+      color: blue;
+    }
+ 
+ .d2
+ {
+  position: fixed;
+  top:200px;
+  left:200px;
+ 
+ }
+ .d3
+ {
+  position: fixed;
+top:200px;
+right:200px;
+ }
+ #b1
+ {
+   position: fixed;
+top:500px;
+right:700px;
+border-radius: 50%;
+background-color: grey;
+ }
+
+  </style>
+</head>
+<body>
+  <center><h1>Cancer Detection </h1></center>
+<marquee>It will predict your type of breast cancer (benign or marinal)</marquee>
+  
+ 
+  <form action="kk" method="post">
+     Enter Name :   <input type="text" name='name'><br>
+      <h2>Give mean details </h2>
+<div class='d2'>
+ Enter Mean_Radius    :<input type="text" name='rad'><br><br>
+    Enter Mean_texture   :<input type="text" name='tex'><br><br>
+ Enter Mean_perimeter :<input type="text" name='per'><br><br>
+ Enter Mean_area      :<input type="text" name='are'><br><br>
+ Enter Mean_smoothness:<input type="text" name='smo'>
+</div>
+<div class='d3'>
+  
+ Enter Mean_Compactness      :<input type="text" name='com'><br><br>
+ Enter Mean_concativity      :<input type="text" name='con'><br><br>
+ Enter Mean_concavepoints    :<input type="text" name='co2'><br><br>
+ Enter Mean_symmetry         :<input type="text" name='sym'><br><br>
+ Enter Mean_fractaldimension :<input type="text" name='fra'>
+</div>
+
+    <button id='b1' type="submit" class="btn btn-default">Submit</button>
+  </form>
+
+
+</body>
+</html>
